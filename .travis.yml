@@ -14,12 +14,13 @@ php:
 env:
   global:
     - COMPOSER_BIN_DIR=~/bin
-    - INTEGRATION_SETS=3
+    - INTEGRATION_SETS=4
   matrix:
     - TEST_SUITE=unit
     - TEST_SUITE=integration INTEGRATION_INDEX=1
     - TEST_SUITE=integration INTEGRATION_INDEX=2
     - TEST_SUITE=integration INTEGRATION_INDEX=3
+    - TEST_SUITE=integration INTEGRATION_INDEX=4
     - TEST_SUITE=static
 cache:
   apt: true
